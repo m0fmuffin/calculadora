@@ -1,0 +1,66 @@
+body {
+    background-color: #f2e8cf;
+    font-family: 'Orbitron';
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #386641;
+    margin-bottom: 30px;
+}
+#calculadora {
+    background-color: #386641;
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+#pantalla {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f2e8cf;
+    color: #386641;
+    box-sizing: border-box;
+}
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    height: 60px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Orbitron';
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.btnNumero {
+    background-color: #a7c957;
+    color: #386641;
+}
+.btnOperador {
+    background-color: #6a994e;
+    color: white;
+}
+#limpiar {
+    background-color: #bc4749;
+    color: white;
+}
+#igual {
+    background-color: #386641;
+    color: white;
+    border: 2px solid #a7c957;
+}
+button:active {
+    transform: scale(0.95);
+}
