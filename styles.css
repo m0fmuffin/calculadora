@@ -1,5 +1,6 @@
 body {
     display: flex;
+    align-items: center;
     background-color: #f2e8cf;
     font-family: 'Orbitron';
     text-align: center;
