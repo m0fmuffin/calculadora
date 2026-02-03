@@ -1,12 +1,22 @@
 let pantalla = document.getElementById("pantalla");
-let botonesNumero = document.querySelectorAll(".btnNumero");
-let botonesOperacion = document.querySelectorAll(".btnOperador");
 let botonIgual = document.getElementById("igual");
 let botonLimpiar = document.getElementById("limpiar");
+let botonesNumero = document.querySelectorAll(".btnNumero");
+let botonesOperacion = document.querySelectorAll(".btnOperador");
+
 
 let primerNumero = "";
 let operacion = "";
 let segundoNumero = "";
+
+
+botonLimpiar.addEventListener("click", function() {
+    pantalla.value = "";
+    primerNumero = "";
+    segundoNumero = "";
+    operacion = "";
+});
+
 
 botonesNumero.forEach(function(boton) {
     boton.addEventListener("click", function() {
@@ -53,12 +63,6 @@ botonIgual.addEventListener("click", function() {
     pantalla.value = resultado;
 });
 
-botonLimpiar.addEventListener("click", function() {
-    pantalla.value = "";
-    primerNumero = "";
-    segundoNumero = "";
-    operacion = "";
-});
 
 
 
